@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html  lang="en">
+<head>
+<meta name="viewport" content="width=device-width initial-scale=1.0">
+<link rel="stylesheet" href="assests/css/style.css">
+ <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<title>
+Portfolio
+</title>
+<style>
+*{
+box-sizing:border-box;
+}
+body{
+background-color:#ffffff;
+
+}
+.column{
+float:left;
+width:50.0%;
+padding:50px;
+height:300px;
+}
+
+.row:after{
+content:"";
+display:table;
+clear:both;
+}
+.responsive{
+clear:both;
+width:100%;
+max-width:400px;
+height:auto%;
+margin:0 auto;
+padding:0;
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:gray;
+   color: white;
+   text-align: center;
+}
+@media screen and (max-width:858px){
+.column{
+width:100%;
+}
+p.resumeheading{
+padding-left:1%;
+}
+
+}
+</style>
+</head>
+<body>
+<header>
+<nav>
+<input type="checkbox" id="check">
+<label for="check" class="checkbtn">
+<i class="fa fa-bars"></i>
+</label>
+<ul>
+ <li><a  href="index.html">Home</a></li>
+  <li><a href="about.html">About</a></li>
+  <li> <a href="skills.html">Skills</a></li>
+ <li> <a href="projects.html">Projects</a></li>
+
+  <li><a href="contact.html">Contact</a></li>
+</ul></nav>
+</header>
+<h2 style="color:#000000;font-size:225%;text-align:center;margin-top:5%;margin-bottom:5%;">Projets UnderTaken</h2>
+<div class="row">
+<div class="column" style="background-color:#828282;">
+<h2>Nimma Mane</h2>
+<p>This is the fresh fruits ordering website design 
+Developed through HTML,CSS,Javascript.This is one of my design.
+This design does not come with backend.</p>
+
+</div>
+<div class="column" style="background-color:#bdbdbd;">
+<h2>Watch Shop Management System</h2>
+<p>It is an application that computerized the process of storing and
+managing the watches.It also has statistics page to keep track of board 
+of watches that was high on demand by customers.This application is built in 
+PHP and has backend with it.</p>
+
+</div>
+
+</div>
+
+<div class="footer">
+<p style="font-size:100%;text-align:center;display:inline-block;">&copy;All Rights Reserved</p>
+  <a><i class="fa fa-facebook-official" style="clear:both;font-size:1.625em;padding-top:1%;padding-right:1%;"></i></a>
+  <a><i class="fa fa-linkedin" style="clear:both;font-size:1.625em;padding-top:1%;padding-right:1%;"></i></a>
+  <a><i class="fa fa-instagram" style="clear:both;font-size:1.625em;padding-top:1%;"></i></a>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html  lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="assests/css/style.css">
+ <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<title>Portfolio</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+input[type=text],input[type=email], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:gray;
+   color: white;
+   text-align: center;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+</style>
+<script>
+function myfunction{
+             document.getElementById('fname').value=''; 
+            document.getElementById('email').value=''; 
+            document.getElementById('country').value=''; 
+			 document.getElementById('subject').value='';
+}
+
+</script>
+</head>
+<body>
+<header>
+<nav>
+<input type="checkbox" id="check">
+<label for="check" class="checkbtn">
+<i class="fa fa-bars"></i>
+</label>
+<ul>
+ <li><a  href="index.html">Home</a></li>
+  <li><a href="about.html">About</a></li>
+  <li> <a href="skills.html">Skills</a></li>
+ <li> <a href="projects.html">Projects</a></li>
+
+  <li><a href="contact.html">Contact</a></li>
+</ul></nav>
+</header>
+<h2>Contact Form</h2>
+<p>Please fill the below form to contact </p>
+
+<div class="container">
+  <form>
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Email</label>
+      </div>
+      <div class="col-75">
+        <input type="email" id="email" name="email" placeholder="abc@gmail.com.." required>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="country">Country</label>
+      </div>
+	  <div class="col-75">
+        <input type="text" id="country" name="country" placeholder="Your country.." required>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">Subject</label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px" required></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <input type="submit" value="Submit" onclick="myfunction()">
+    </div>
+  </form>
+</div>
+<div class="footer">
+  <p style="font-size:100%;text-align:center;display:inline-block;">&copy;All Rights Reserved</p>
+  <a><i class="fa fa-facebook-official" style="clear:both;font-size:1.625em;padding-right:1%;"></i></a>
+  <a><i class="fa fa-linkedin" style="clear:both;font-size:1.625em;padding-right:1%;"></i></a>
+  <a><i class="fa fa-instagram" style="clear:both;font-size:1.625em;"></i></a>
+</div>
+</body>
+</html>

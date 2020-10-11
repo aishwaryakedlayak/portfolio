@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width initial-scale=1.0">
+<link rel="stylesheet" href="assests/css/style.css">
+ <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link rel="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+<title>
+Portfolio
+</title>
+<style>
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:gray;
+   color: white;
+   text-align: center;
+}
+*{
+padding:0;
+margin:0;
+box-sizing:border-box;
+font-family:'Roboto',sans-serif;
+}
+body{
+background-color:#333;
+}
+.inner{
+padding-top:20px;
+}
+.header{
+text-align:center;
+color:#fff;
+padding:1rem;
+position:relative;
+}
+.header:after{
+content:'';
+position:relative;
+bottom:0;
+left:50%;
+transform:translate(-50%);
+height:4px;
+width:100px;
+background-color:#2ecc71;
+}
+.container{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+justify-content:center;
+align-items:center;
+text-align:center;
+grid-gap:1rem;
+padding:1rem 80px;
+font-size:1.2rem;
+}
+.skill-box{
+padding:1rem;
+color:#ddd;
+cursor:pointer;
+}
+.skill-title{
+display:flex;
+flex-direction:column;
+align-items:center;
+padding:0.5rem;
+margin-bottom:0.5rem;
+position:relative;
+}
+.skill-title:after{
+content:'';
+position:absolute;
+bottom:0;
+right:50%;
+width:0;
+height:45px;
+border-radius:2px 0 0 2px;
+
+}
+.skill-title:before{
+content:'';
+position:absolute;
+bottom:0;
+left:50%;
+width:35px;
+height:45px;
+border-radius:0 2px 2px 0;
+
+}
+.img{
+width:90px;
+height:90px;
+position:relative;
+border-radius:45px;
+background-color:#fff;
+}
+.skill-title h3{
+color:#fff;
+
+}
+.img:after{
+content:'';
+position:absolute;
+top:0;
+left:0;
+width:50%;
+height:90px;
+background:rgba(100,100,100,0.5);
+border-radius:45px 0 0 45px;
+}
+.skill-icon{
+width:50px;
+height:70px;
+z-index:2;
+}
+@media screen and (max-width:858px){
+.container{
+grid-template-columns:repeat(2,1fr);
+padding:2rem 50px;
+}
+	
+	
+}
+@media screen and (max-width:650px){
+.container{
+grid-template-columns:1fr;
+
+}
+}
+</style>
+</head>
+<body>
+<header>
+<nav>
+<input type="checkbox" id="check">
+<label for="check" class="checkbtn">
+<i class="fa fa-bars"></i>
+</label>
+<ul>
+ <li><a  href="index.html">Home</a></li>
+  <li><a href="about.html">About</a></li>
+  <li> <a href="skills.html">Skills</a></li>
+ <li> <a href="projects.html">Projects</a></li>
+
+  <li><a href="contact.html">Contact</a></li>
+</ul></nav>
+</header>
+<div clas="inner">
+<div class="header">
+<h1>My Skills</h1>
+</div>
+<div class="container">
+<div class="skill-box">
+<div class="skill-title">
+<div class="img">
+<img src="assests/img/html.png" alt="htmllogo" class="skill-icon">
+</div>
+<h3>HTML5</h3>
+</div>
+<p style="font-size:70%;">I have good knowledge about HTML5 as I have developed few templates and webpages for which basic coding I used was HTML5.</p>
+</div>
+<div class="skill-box">
+<div class="skill-title">
+<div class="img">
+<img src="assests/img/css.png" alt="csslogo" class="skill-icon">
+</div>
+<h3>CSS3</h3>
+</div>
+<p style="font-size:70%;">I have designed webpages often using CSS3.This has also helped me in creating responsive sites.</p>
+</div>
+<div class="skill-box">
+<div class="skill-title">
+<div class="img">
+<img src="assests/img/js.jpeg" alt="jslogo" class="skill-icon">
+</div>
+<h3>Javascript</h3>
+</div>
+<p style="font-size:70%;">In need order to make webpages interactive I have used Javascript.CSS along with Javascript has helped to create responsive sites.</p>
+</div>
+<div class="skill-box">
+<div class="skill-title">
+<div class="img">
+<img src="assests/img/mysql.png" alt="mysqllogo" class="skill-icon">
+</div>
+<h3>MySQL</h3>
+</div>
+<p style="font-size:70%;">I have Stored the data from webpages in database.This requires the knowledge of MySQL .</p>
+</div>
+</div>
+<div class="footer">
+  <p style="font-size:100%;text-align:center;display:inline-block;">&copy;All Rights Reserved</p>
+  <a><i class="fa fa-facebook-official" style="clear:both;font-size:1.625em;padding-top:1%;padding-right:1%;"></i></a>
+  <a><i class="fa fa-linkedin" style="clear:both;font-size:1.625em;padding-top:1%;padding-right:1%;"></i></a>
+  <a><i class="fa fa-instagram" style="clear:both;font-size:1.625em;padding-top:1%;"></i></a>
+</div>
+</body>
+</html>
